@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Cgiode](https://github.com/sabrereyn/sunnyside-landing-page)
+- Solution URL: [Code](https://github.com/sabrereyn/sunnyside-landing-page)
 - Live Site URL: [Live](https://sabrereyn.github.io/sunnyside-landing-page/)
 
 ## My process
