@@ -4,6 +4,7 @@
 
 %half-width {
   width: 50%;
+  height: auto;
 }
 
 /* For nav's vertical center alignment */
@@ -43,7 +44,7 @@
 
 %img-no-content {
   @extend %half-width;
-  display: block;
+  // display: block;
 }
 
 %img-with-content {

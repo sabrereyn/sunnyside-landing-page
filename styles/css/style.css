@@ -4,6 +4,7 @@
 
 .transform-img, .stand-out-img, .graphic-design, .photography, .transform, .stand-out {
   width: 50%;
+  height: auto;
 }
 
 /* For nav's vertical center alignment */
@@ -41,10 +42,6 @@ nav, .nav-links, .bottom-imgs, footer {
   text-decoration: none;
   color: black;
   padding: 1px 3px;
-}
-
-.transform-img, .stand-out-img {
-  display: block;
 }
 
 .graphic-design, .photography {
