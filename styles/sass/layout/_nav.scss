@@ -1,0 +1,34 @@
+nav {
+  @extend %flex-center;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.container-links {
+  width: 30%;
+}
+
+.nav-links {
+  @extend %flex-center;
+  justify-content: space-between;
+  padding: 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+
+.nav-link {
+  font-family: $font-barlow;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.contact-link {
+  font-family: $font-fraunces;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: hsl(212, 27%, 19%);
+  background-color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+}

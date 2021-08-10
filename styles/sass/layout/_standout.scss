@@ -1,0 +1,13 @@
+.stand-out {
+  @extend %content-on-white;
+  @extend %half-width;
+  // height: 100px;
+
+  .learn-more {
+    box-shadow: 0 -5px hsl(6, 100%, 87%) inset;
+  }
+}
+
+.stand-out-img {
+  @extend %img-no-content;
+}

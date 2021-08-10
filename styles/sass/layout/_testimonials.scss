@@ -1,0 +1,46 @@
+.testimonials {
+  @extend %full-width;
+
+  text-align: center;
+  padding: 10% 10%;
+  font-family: $font-barlow;
+
+  h4 {
+    font-family: $font-fraunces;
+    color: hsl(210, 4%, 67%);
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+
+  img {
+    border-radius: 50%;
+    width: 50px;
+    padding: 30px 0;
+  }
+}
+
+.client {
+  width: 30%;
+  padding: 20px;
+}
+
+.client-review {
+  line-height: 2;
+  margin-bottom: 50px;
+}
+
+.client-name {
+  font-weight: 700;
+  font-family: $font-fraunces;
+  font-size: 15px;
+}
+
+.client-title {
+  color: hsl(210, 4%, 67%);
+}

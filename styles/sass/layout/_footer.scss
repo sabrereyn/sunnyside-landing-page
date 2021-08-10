@@ -1,0 +1,25 @@
+footer {
+  @extend %flex-center;
+  @extend %full-width;
+
+  height: 250px;
+  flex-direction: column;
+  justify-content: space-between;
+  color: hsl(168, 34%, 41%);
+  background-color: hsl(168, 52%, 68%);
+  padding: 50px 0;
+}
+
+.footer-nav-links {
+  a {
+    font-family: $font-barlow;
+    padding: 0 20px;
+    text-decoration: none;
+    color: inherit;
+  }
+}
+.social-media {
+  i {
+    padding: 0 5px;
+  }
+}

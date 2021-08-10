@@ -1,0 +1,261 @@
+.testimonials, footer {
+  width: 100%;
+}
+
+.transform-img, .stand-out-img, .graphic-design, .photography, .transform, .stand-out {
+  width: 50%;
+}
+
+/* For nav's vertical center alignment */
+nav, .nav-links, .bottom-imgs, footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.transform div, .stand-out div {
+  margin: 30% auto;
+  width: 50%;
+}
+
+.transform h2, .stand-out h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.transform p, .stand-out p {
+  font-family: "Barlow", sans-serif;
+  color: #818498;
+  line-height: 1.5;
+  padding-bottom: 1.5rem;
+}
+
+.transform .learn-more, .stand-out .learn-more {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  padding: 1px 3px;
+}
+
+.transform-img, .stand-out-img {
+  display: block;
+}
+
+.graphic-design, .photography {
+  position: relative;
+  text-align: center;
+  line-height: 1.5;
+  height: 100%;
+}
+
+.graphic-design img, .photography img {
+  display: block;
+  width: 100%;
+}
+
+.graphic-design div, .photography div {
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  bottom: 50px;
+}
+
+.graphic-design h3, .photography h3 {
+  font-size: 1.5rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+.graphic-design p, .photography p {
+  font-family: "Barlow", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+nav {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
+}
+
+.container-links {
+  width: 30%;
+}
+
+.nav-links {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0;
+}
+
+.nav-links li {
+  list-style-type: none;
+}
+
+.nav-link {
+  font-family: "Barlow", sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+.contact-link {
+  font-family: "Fraunces", serif;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #23303e;
+  background-color: white;
+  text-transform: uppercase;
+}
+
+.creative {
+  height: 70vh;
+  width: 100%;
+  color: white;
+  background-image: url("../../images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+.creative h1 {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin: 4rem 0;
+}
+
+.img-arrow {
+  display: block;
+  margin: auto;
+}
+
+.transform .learn-more {
+  -webkit-box-shadow: 0 -5px #ffef94 inset;
+          box-shadow: 0 -5px #ffef94 inset;
+}
+
+.stand-out .learn-more {
+  -webkit-box-shadow: 0 -5px #ffc3bd inset;
+          box-shadow: 0 -5px #ffc3bd inset;
+}
+
+.graphic-design {
+  color: #25564b;
+}
+
+.photography {
+  color: #19536b;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 10% 10%;
+  font-family: "Barlow", sans-serif;
+}
+
+.testimonials h4 {
+  font-family: "Fraunces", serif;
+  color: #a7abae;
+  font-size: 1.5rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.clients img {
+  border-radius: 50%;
+  width: 50px;
+  padding: 30px 0;
+}
+
+.client {
+  width: 30%;
+  padding: 20px;
+}
+
+.client-review {
+  line-height: 2;
+  margin-bottom: 50px;
+}
+
+.client-name {
+  font-weight: 700;
+  font-family: "Fraunces", serif;
+  font-size: 15px;
+}
+
+.client-title {
+  color: #a7abae;
+}
+
+.bottom-img {
+  width: 25%;
+}
+
+footer {
+  height: 250px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #458c7e;
+  background-color: #83d8c7;
+  padding: 50px 0;
+}
+
+.footer-nav-links a {
+  font-family: "Barlow", sans-serif;
+  padding: 0 20px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-media i {
+  padding: 0 5px;
+}
+
+:root {
+  font-size: 13px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
