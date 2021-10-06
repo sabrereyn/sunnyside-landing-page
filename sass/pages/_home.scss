@@ -1,0 +1,63 @@
+.section {
+  display: flex;
+  width: 100%;
+
+  &-transform {
+    &__link {
+      box-shadow: 0 -5px hsl(51, 100%, 79%) inset;
+    }
+  }
+
+  &-standout {
+    &__link {
+      box-shadow: 0 -5px hsl(6, 100%, 87%) inset;
+    }
+  }
+
+  &-graphic-design,
+  &-photography {
+    width: 50%;
+    position: relative;
+    text-align: center;
+    line-height: 1.5;
+    height: 100%;
+  }
+
+  &-graphic-design * {
+    color: hsl(167, 40%, 24%);
+  }
+
+  &-photography * {
+    color: hsl(198, 62%, 26%);
+  }
+
+  &__text-box {
+    width: 50%;
+    padding: 12% 12%;
+
+    &--float {
+      position: absolute;
+      width: 40%;
+      left: 30%;
+      bottom: 50px;
+    }
+  }
+
+  &__img {
+    display: block;
+    width: 50%;
+
+    &--full {
+      width: 100%;
+    }
+  }
+
+  &__link {
+    font-family: $font-fraunces;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    padding: 1px 3px;
+  }
+}

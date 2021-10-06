@@ -17,67 +17,6 @@
   display: flex;
 }
 
-%content-on-white {
-  div {
-    @extend %half-width;
-    padding: 12% 12%;
-  }
-
-  h2 {
-    font-family: $font-fraunces;
-    font-weight: 900;
-    font-size: 2.5rem;
-    margin: 0;
-  }
-
-  p {
-    font-family: $font-barlow;
-    color: hsl(232, 10%, 55%);
-    line-height: 1.5;
-    padding-bottom: 1.5rem;
-  }
-
-  .learn-more {
-    font-family: $font-fraunces;
-    font-weight: 900;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: black;
-    padding: 1px 3px;
-  }
-}
-
 %img-no-content {
   @extend %half-width;
-}
-
-%img-with-content {
-  @extend %half-width;
-
-  position: relative;
-  text-align: center;
-  line-height: 1.5;
-  height: 100%;
-
-  img {
-    display: block;
-    width: 100%;
-  }
-
-  div {
-    position: absolute;
-    width: 40%;
-    left: 30%;
-    bottom: 50px;
-  }
-
-  h3 {
-    font-size: 1.5rem;
-    font-family: $font-fraunces;
-    font-weight: 900;
-  }
-
-  p {
-    font-family: $font-barlow;
-  }
 }

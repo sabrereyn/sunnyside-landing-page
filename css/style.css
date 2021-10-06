@@ -1,65 +1,11 @@
-footer, .testimonials, .stand-out, .transform {
+footer, .testimonials {
   width: 100%;
-}
-
-.photography, .graphic-design, .stand-out-img, .transform-img, .stand-out div, .transform div {
-  width: 50%;
-  height: auto;
 }
 
 /* For nav's vertical center alignment */
 footer, .bottom-imgs, .nav__list, .nav {
   display: flex;
   align-items: center;
-}
-
-.stand-out div, .transform div {
-  padding: 12% 12%;
-}
-.stand-out h2, .transform h2 {
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-  font-size: 2.5rem;
-  margin: 0;
-}
-.stand-out p, .transform p {
-  font-family: "Barlow", sans-serif;
-  color: #818498;
-  line-height: 1.5;
-  padding-bottom: 1.5rem;
-}
-.stand-out .learn-more, .transform .learn-more {
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-  padding: 1px 3px;
-}
-
-.photography, .graphic-design {
-  position: relative;
-  text-align: center;
-  line-height: 1.5;
-  height: 100%;
-}
-.photography img, .graphic-design img {
-  display: block;
-  width: 100%;
-}
-.photography div, .graphic-design div {
-  position: absolute;
-  width: 40%;
-  left: 30%;
-  bottom: 50px;
-}
-.photography h3, .graphic-design h3 {
-  font-size: 1.5rem;
-  font-family: "Fraunces", serif;
-  font-weight: 900;
-}
-.photography p, .graphic-design p {
-  font-family: "Barlow", sans-serif;
 }
 
 .heading-primary {
@@ -69,6 +15,24 @@ footer, .bottom-imgs, .nav__list, .nav {
   text-transform: uppercase;
   letter-spacing: 8px;
   margin: 4rem 0;
+}
+
+.section-secondary {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  margin: 0;
+}
+.section-tertiary {
+  font-size: 1.5rem;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+.section-paragraph {
+  font-family: "Barlow", sans-serif;
+  color: #818498;
+  line-height: 1.5;
+  padding-bottom: 1.5rem;
 }
 
 .header {
@@ -86,15 +50,6 @@ footer, .bottom-imgs, .nav__list, .nav {
 .header__img {
   display: block;
   margin: auto;
-}
-
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-
-.attribution a {
-  color: #3e52a3;
 }
 
 .nav {
@@ -117,7 +72,7 @@ footer, .bottom-imgs, .nav__list, .nav {
   text-decoration: none;
   color: white;
 }
-.nav__link-contact {
+.nav__link--contact {
   font-family: "Fraunces", serif;
   padding: 10px 20px;
   border-radius: 20px;
@@ -126,26 +81,62 @@ footer, .bottom-imgs, .nav__list, .nav {
   text-transform: uppercase;
 }
 
-.transform {
+.section {
   display: flex;
+  width: 100%;
 }
-.transform .learn-more {
+.section-transform__link {
   box-shadow: 0 -5px #ffef94 inset;
 }
-
-.stand-out {
-  display: flex;
-}
-.stand-out .learn-more {
+.section-standout__link {
   box-shadow: 0 -5px #ffc3bd inset;
 }
-
-.graphic-design {
+.section-graphic-design, .section-photography {
+  width: 50%;
+  position: relative;
+  text-align: center;
+  line-height: 1.5;
+  height: 100%;
+}
+.section-graphic-design * {
   color: #25564b;
 }
-
-.photography {
+.section-photography * {
   color: #19536b;
+}
+.section__text-box {
+  width: 50%;
+  padding: 12% 12%;
+}
+.section__text-box--float {
+  position: absolute;
+  width: 40%;
+  left: 30%;
+  bottom: 50px;
+}
+.section__img {
+  display: block;
+  width: 50%;
+}
+.section__img--full {
+  width: 100%;
+}
+.section__link {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  padding: 1px 3px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 
 .testimonials {
@@ -216,16 +207,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .transform div, .stand-out div {
-    padding: 8% 7%;
-  }
-
-  .graphic-design div, .photography div {
-    width: 70%;
-    left: 15%;
-    bottom: 25px;
-  }
-
   .container-links {
     width: 50%;
   }
@@ -237,14 +218,6 @@ footer {
 @media screen and (max-width: 425px) {
   * {
     text-align: center;
-  }
-
-  .transform div, .transform-img, .stand-out div, .stand-out-img, .graphic-design, .photography {
-    width: 100%;
-  }
-
-  .transform div, .stand-out div {
-    padding: 15% 5%;
   }
 
   .transform {
