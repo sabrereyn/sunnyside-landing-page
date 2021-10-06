@@ -1,0 +1,18 @@
+.header {
+  height: 70vh;
+  width: 100%;
+  color: hsl(0, 0%, 100%);
+  background-image: url("../../images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+
+  &__text-box {
+    margin: 4rem 0;
+  }
+
+  &__img {
+    display: block;
+    margin: auto;
+  }
+}

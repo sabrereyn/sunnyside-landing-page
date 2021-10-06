@@ -1,41 +1,60 @@
-.testimonials, footer {
+.heading-primary {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  margin: 4rem 0;
+}
+
+.header {
+  height: 70vh;
+  width: 100%;
+  color: white;
+  background-image: url("../../images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+.header__text-box {
+  margin: 4rem 0;
+}
+.header__img {
+  display: block;
+  margin: auto;
+}
+
+footer, .testimonials, .stand-out, .transform {
   width: 100%;
 }
 
-.transform-img, .stand-out-img, .graphic-design, .photography, .transform, .stand-out {
+.photography, .graphic-design, .stand-out-img, .transform-img, .stand-out div, .transform div {
   width: 50%;
   height: auto;
 }
 
 /* For nav's vertical center alignment */
-nav, .nav-links, .bottom-imgs, footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
+footer, .bottom-imgs, .nav-links, nav {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 
-.transform div, .stand-out div {
-  margin: 30% auto;
-  width: 50%;
+.stand-out div, .transform div {
+  padding: 12% 12%;
 }
-
-.transform h2, .stand-out h2 {
+.stand-out h2, .transform h2 {
   font-family: "Fraunces", serif;
   font-weight: 900;
   font-size: 2.5rem;
+  margin: 0;
 }
-
-.transform p, .stand-out p {
+.stand-out p, .transform p {
   font-family: "Barlow", sans-serif;
   color: #818498;
   line-height: 1.5;
   padding-bottom: 1.5rem;
 }
-
-.transform .learn-more, .stand-out .learn-more {
+.stand-out .learn-more, .transform .learn-more {
   font-family: "Fraunces", serif;
   font-weight: 900;
   text-transform: uppercase;
@@ -44,32 +63,28 @@ nav, .nav-links, .bottom-imgs, footer {
   padding: 1px 3px;
 }
 
-.graphic-design, .photography {
+.photography, .graphic-design {
   position: relative;
   text-align: center;
   line-height: 1.5;
   height: 100%;
 }
-
-.graphic-design img, .photography img {
+.photography img, .graphic-design img {
   display: block;
   width: 100%;
 }
-
-.graphic-design div, .photography div {
+.photography div, .graphic-design div {
   position: absolute;
   width: 40%;
   left: 30%;
   bottom: 50px;
 }
-
-.graphic-design h3, .photography h3 {
+.photography h3, .graphic-design h3 {
   font-size: 1.5rem;
   font-family: "Fraunces", serif;
   font-weight: 900;
 }
-
-.graphic-design p, .photography p {
+.photography p, .graphic-design p {
   font-family: "Barlow", sans-serif;
 }
 
@@ -83,9 +98,7 @@ nav, .nav-links, .bottom-imgs, footer {
 }
 
 nav {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 20px;
 }
 
@@ -94,12 +107,9 @@ nav {
 }
 
 .nav-links {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 0;
 }
-
 .nav-links li {
   list-style-type: none;
 }
@@ -119,38 +129,18 @@ nav {
   text-transform: uppercase;
 }
 
-.creative {
-  height: 70vh;
-  width: 100%;
-  color: white;
-  background-image: url("../../images/desktop/image-header.jpg");
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: cover;
+.transform {
+  display: flex;
 }
-
-.creative h1 {
-  text-align: center;
-  font-family: "Fraunces", serif;
-  font-size: 3rem;
-  text-transform: uppercase;
-  letter-spacing: 8px;
-  margin: 4rem 0;
-}
-
-.img-arrow {
-  display: block;
-  margin: auto;
-}
-
 .transform .learn-more {
-  -webkit-box-shadow: 0 -5px #ffef94 inset;
-          box-shadow: 0 -5px #ffef94 inset;
+  box-shadow: 0 -5px #ffef94 inset;
 }
 
+.stand-out {
+  display: flex;
+}
 .stand-out .learn-more {
-  -webkit-box-shadow: 0 -5px #ffc3bd inset;
-          box-shadow: 0 -5px #ffc3bd inset;
+  box-shadow: 0 -5px #ffc3bd inset;
 }
 
 .graphic-design {
@@ -163,10 +153,9 @@ nav {
 
 .testimonials {
   text-align: center;
-  padding: 10% 10%;
+  padding: 10%;
   font-family: "Barlow", sans-serif;
 }
-
 .testimonials h4 {
   font-family: "Fraunces", serif;
   color: #a7abae;
@@ -176,14 +165,9 @@ nav {
 }
 
 .clients {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 .clients img {
   border-radius: 50%;
   width: 50px;
@@ -216,13 +200,8 @@ nav {
 
 footer {
   height: 250px;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: column;
+  justify-content: space-between;
   color: #458c7e;
   background-color: #83d8c7;
   padding: 50px 0;
@@ -239,20 +218,66 @@ footer {
   padding: 0 5px;
 }
 
+@media screen and (max-width: 768px) {
+  .transform div, .stand-out div {
+    padding: 8% 7%;
+  }
+
+  .graphic-design div, .photography div {
+    width: 70%;
+    left: 15%;
+    bottom: 25px;
+  }
+
+  .container-links {
+    width: 50%;
+  }
+
+  .testimonials {
+    padding: 5%;
+  }
+}
+@media screen and (max-width: 425px) {
+  * {
+    text-align: center;
+  }
+
+  .transform div, .transform-img, .stand-out div, .stand-out-img, .graphic-design, .photography {
+    width: 100%;
+  }
+
+  .transform div, .stand-out div {
+    padding: 15% 5%;
+  }
+
+  .transform {
+    flex-direction: column-reverse;
+  }
+
+  .stand-out {
+    flex-direction: column;
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  .creative {
+    background-image: url("../../images/mobile-devices/image-header.jpg");
+  }
+}
 :root {
   font-size: 13px;
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
+
+/*# sourceMappingURL=style.css.map */

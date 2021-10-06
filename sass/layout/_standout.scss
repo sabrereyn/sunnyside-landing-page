@@ -1,7 +1,7 @@
 .stand-out {
   @extend %content-on-white;
-  @extend %half-width;
-  // height: 100px;
+  @extend %full-width;
+  display: flex;
 
   .learn-more {
     box-shadow: 0 -5px hsl(6, 100%, 87%) inset;

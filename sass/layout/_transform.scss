@@ -1,6 +1,7 @@
 .transform {
   @extend %content-on-white;
-  @extend %half-width;
+  @extend %full-width;
+  display: flex;
 
   .learn-more {
     box-shadow: 0 -5px hsl(51, 100%, 79%) inset;

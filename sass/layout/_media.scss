@@ -1,0 +1,55 @@
+@media screen and (max-width: 768px) {
+  %content-on-white {
+    div {
+      padding: 8% 7%;
+    }
+  }
+
+  %img-with-content {
+    div {
+      width: 70%;
+      left: 15%;
+      bottom: 25px;
+    }
+  }
+
+  .container-links {
+    width: 50%;
+  }
+
+  .testimonials {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  * {
+    text-align: center;
+  }
+
+  %half-width {
+    width: 100%;
+  }
+
+  %content-on-white {
+    div {
+      padding: 15% 5%;
+    }
+  }
+
+  .transform {
+    flex-direction: column-reverse;
+  }
+
+  .stand-out {
+    flex-direction: column;
+  }
+
+  body {
+    flex-direction: column;
+  }
+
+  .creative {
+    background-image: url("../../images/mobile-devices/image-header.jpg");
+  }
+}
