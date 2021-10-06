@@ -34,7 +34,7 @@ footer, .testimonials, .stand-out, .transform {
 }
 
 /* For nav's vertical center alignment */
-footer, .bottom-imgs, .nav-links, nav {
+footer, .bottom-imgs, .nav__list, .nav {
   display: flex;
   align-items: center;
 }
@@ -97,30 +97,27 @@ footer, .bottom-imgs, .nav-links, nav {
   color: #3e52a3;
 }
 
-nav {
+.nav {
   justify-content: space-between;
   padding: 20px;
 }
-
-.container-links {
-  width: 30%;
+.nav__ham {
+  display: none;
 }
-
-.nav-links {
+.nav__list {
+  width: 30%;
   justify-content: space-between;
   padding: 0;
 }
-.nav-links li {
+.nav__item {
   list-style-type: none;
 }
-
-.nav-link {
+.nav__link {
   font-family: "Barlow", sans-serif;
   text-decoration: none;
   color: white;
 }
-
-.contact-link {
+.nav__link-contact {
   font-family: "Fraunces", serif;
   padding: 10px 20px;
   border-radius: 20px;
