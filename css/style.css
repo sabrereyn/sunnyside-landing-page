@@ -1,11 +1,36 @@
-footer {
-  width: 100%;
+@media screen and (max-width: 768px) {
+  .testimonials {
+    padding: 5%;
+  }
 }
-
+@media screen and (max-width: 425px) {
+  * {
+    text-align: center;
+  }
+}
 /* For nav's vertical center alignment */
-footer, .bottom-imgs, .nav__list, .nav {
+.bottom-imgs {
   display: flex;
   align-items: center;
+}
+
+:root {
+  font-size: 13px;
+}
+
+* {
+  box-sizing: border-box;
+}
+@media only screen and (max-width: 475px) {
+  * {
+    text-align: center;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .heading-primary {
@@ -69,10 +94,15 @@ footer, .bottom-imgs, .nav__list, .nav {
   height: 70vh;
   width: 100%;
   color: white;
-  background-image: url("../../images/desktop/image-header.jpg");
+  background-image: url("./../images/desktop/image-header.jpg");
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+}
+@media only screen and (max-width: 475px) {
+  .header {
+    background-image: url("./../images/mobile-devices/image-header.jpg");
+  }
 }
 .header__text-box {
   margin: 4rem 0;
@@ -83,6 +113,8 @@ footer, .bottom-imgs, .nav__list, .nav {
 }
 
 .nav {
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 20px;
 }
@@ -91,8 +123,15 @@ footer, .bottom-imgs, .nav__list, .nav {
 }
 .nav__list {
   width: 30%;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 0;
+}
+@media only screen and (max-width: 768px) {
+  .nav__list {
+    width: 50%;
+  }
 }
 .nav__item {
   list-style-type: none;
@@ -118,8 +157,18 @@ footer, .bottom-imgs, .nav__list, .nav {
 .section-transform__link {
   box-shadow: 0 -5px #ffef94 inset;
 }
+@media only screen and (max-width: 475px) {
+  .section-transform {
+    flex-direction: column-reverse;
+  }
+}
 .section-standout__link {
   box-shadow: 0 -5px #ffc3bd inset;
+}
+@media only screen and (max-width: 475px) {
+  .section-standout {
+    flex-direction: column;
+  }
 }
 .section-graphic-design, .section-photography {
   width: 50%;
@@ -128,15 +177,36 @@ footer, .bottom-imgs, .nav__list, .nav {
   line-height: 1.5;
   height: 100%;
 }
+@media only screen and (max-width: 475px) {
+  .section-graphic-design, .section-photography {
+    width: 100%;
+  }
+}
 .section-graphic-design * {
   color: #25564b;
 }
 .section-photography * {
   color: #19536b;
 }
+@media only screen and (max-width: 475px) {
+  .section-sell-point {
+    flex-direction: column;
+  }
+}
 .section__text-box {
   width: 50%;
   padding: 12% 12%;
+}
+@media only screen and (max-width: 768px) {
+  .section__text-box {
+    padding: 8% 7%;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .section__text-box {
+    width: 100%;
+    padding: 15% 5%;
+  }
 }
 .section__text-box--float {
   position: absolute;
@@ -144,11 +214,24 @@ footer, .bottom-imgs, .nav__list, .nav {
   left: 30%;
   bottom: 50px;
 }
+@media only screen and (max-width: 768px) {
+  .section__text-box--float {
+    width: 70%;
+    left: 15%;
+    bottom: 15px;
+  }
+}
 .section__img {
   display: block;
   width: 50%;
 }
+@media only screen and (max-width: 475px) {
+  .section__img {
+    width: 100%;
+  }
+}
 .section__img--full {
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -165,6 +248,11 @@ footer, .bottom-imgs, .nav__list, .nav {
   text-align: center;
   padding: 10%;
   font-family: "Barlow", sans-serif;
+}
+@media only screen and (max-width: 768px) {
+  .section-testimonials {
+    padding: 5%;
+  }
 }
 .section-testimonials__row {
   display: flex;
@@ -184,7 +272,10 @@ footer, .bottom-imgs, .nav__list, .nav {
   width: 25%;
 }
 
-footer {
+.footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
   height: 250px;
   flex-direction: column;
   justify-content: space-between;
@@ -192,15 +283,13 @@ footer {
   background-color: #83d8c7;
   padding: 50px 0;
 }
-
-.footer-nav-links a {
+.footer__link {
   font-family: "Barlow", sans-serif;
   padding: 0 20px;
   text-decoration: none;
   color: inherit;
 }
-
-.social-media i {
+.footer__media {
   padding: 0 5px;
 }
 
@@ -233,19 +322,6 @@ footer {
   .creative {
     background-image: url("../../images/mobile-devices/image-header.jpg");
   }
-}
-:root {
-  font-size: 13px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -23,7 +23,7 @@
     />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="css/style.css" />
 
     <!-- Font Awesome -->
     <script
@@ -109,13 +109,23 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-sell-point">
       <div class="section-graphic-design">
-        <img
-          class="section__img--full"
-          src="images/desktop/image-graphic-design.jpg"
-          alt="graphic-design"
-        />
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="images/desktop/image-graphic-design.jpg"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="images/mobile-devices/image-graphic-design.jpg"
+          />
+          <img
+            class="section__img--full"
+            src="images/mobile-devices/image-graphic-design.jpg"
+            alt="graphic design"
+          />
+        </picture>
         <div class="section__text-box--float">
           <h3 class="section-tertiary">Graphic Design</h3>
           <p class="section-paragraph">
@@ -127,11 +137,26 @@
       </div>
 
       <div class="section-photography">
-        <img
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="images/desktop/image-photography.jpg"
+          />
+          <source
+            media="(max-width: 767px)"
+            srcset="images/mobile-devices/image-photography.jpg"
+          />
+          <img
+            class="section__img--full"
+            src="images/desktop/image-photography.jpg"
+            alt="photography"
+          />
+        </picture>
+        <!-- <img
           class="section__img--full"
           src="images/desktop/image-photography.jpg"
           alt="photography"
-        />
+        /> -->
         <div class="section__text-box--float">
           <h3 class="section-tertiary">Photography</h3>
           <p class="section-paragraph">
@@ -142,37 +167,37 @@
       </div>
     </section>
 
-    <section class="section-testimonials testimonials">
+    <section class="section-testimonials">
       <h2 class="testimonials-secondary">Client testimonials</h2>
-      <div class="section-testimonials__row clients">
-        <div class="card__client client">
+      <div class="section-testimonials__row">
+        <div class="card__client">
           <img class="card__img" src="images/image-emily.jpg" alt="Emily" />
-          <p class="card__review client-review">
+          <p class="card__review">
             We put our trust in Sunnyside and they delivered, making sure our
             needs were met and deadlines were always hit.
           </p>
-          <p class="card__name client-name">Emily R.</p>
-          <p class="card__client-title client-title">Marketing Director</p>
+          <p class="card__name">Emily R.</p>
+          <p class="card__client-title">Marketing Director</p>
         </div>
 
-        <div class="card__client client">
+        <div class="card__client">
           <img class="card__img" src="images/image-thomas.jpg" alt="Thomas" />
-          <p class="card__review client-review">
+          <p class="card__review">
             Sunnyside’s enthusiasm coupled with their keen interest in our
             brand’s success made it a satisfying and enjoyable experience.
           </p>
-          <p class="card__name client-name">Thomas S. Chief</p>
-          <p class="card__client-title client-title">Operating Officer</p>
+          <p class="card__name">Thomas S. Chief</p>
+          <p class="card__client-title">Operating Officer</p>
         </div>
 
-        <div class="card__client client">
+        <div class="card__client">
           <img class="card__img" src="images/image-jennie.jpg" alt="Jennie" />
-          <p class="card__review client-review">
+          <p class="card__review">
             Incredible end result! Our sales increased over 400% when we worked
             with Sunnyside. Highly recommended!
           </p>
-          <p class="card__name client-name">Jennie F.</p>
-          <p class="card__client-title client-title">Business Owner</p>
+          <p class="card__name">Jennie F.</p>
+          <p class="card__client-title">Business Owner</p>
         </div>
       </div>
     </section>
@@ -208,16 +233,16 @@
           fill-rule="nonzero"
         />
       </svg>
-      <div class="footer-nav-links">
-        <a href="#">About</a>
-        <a href="#">Services</a>
-        <a href="#">Projects</a>
+      <div class="footer__list footer-nav-links">
+        <a class="footer__link" href="#">About</a>
+        <a class="footer__link" href="#">Services</a>
+        <a class="footer__link" href="#">Projects</a>
       </div>
       <div class="social-media">
-        <i class="fab fa-facebook-square"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fab fa-twitter"></i>
-        <i class="fab fa-pinterest"></i>
+        <i class="fab fa-facebook-square footer__media"></i>
+        <i class="fab fa-instagram footer__media"></i>
+        <i class="fab fa-twitter footer__media"></i>
+        <i class="fab fa-pinterest footer__media"></i>
       </div>
       <div class="attribution">
         Challenge by

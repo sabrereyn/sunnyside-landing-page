@@ -6,11 +6,19 @@
     &__link {
       box-shadow: 0 -5px hsl(51, 100%, 79%) inset;
     }
+
+    @include respond(phone) {
+      flex-direction: column-reverse;
+    }
   }
 
   &-standout {
     &__link {
       box-shadow: 0 -5px hsl(6, 100%, 87%) inset;
+    }
+
+    @include respond(phone) {
+      flex-direction: column;
     }
   }
 
@@ -21,6 +29,10 @@
     text-align: center;
     line-height: 1.5;
     height: 100%;
+
+    @include respond(phone) {
+      width: 100%;
+    }
   }
 
   &-graphic-design * {
@@ -31,15 +43,36 @@
     color: hsl(198, 62%, 26%);
   }
 
+  &-sell-point {
+    @include respond(phone) {
+      flex-direction: column;
+    }
+  }
+
   &__text-box {
     width: 50%;
     padding: 12% 12%;
+
+    @include respond(tablet) {
+      padding: 8% 7%;
+    }
+
+    @include respond(phone) {
+      width: 100%;
+      padding: 15% 5%;
+    }
 
     &--float {
       position: absolute;
       width: 40%;
       left: 30%;
       bottom: 50px;
+
+      @include respond(tablet) {
+        width: 70%;
+        left: 15%;
+        bottom: 15px;
+      }
     }
   }
 
@@ -47,7 +80,12 @@
     display: block;
     width: 50%;
 
+    @include respond(phone) {
+      width: 100%;
+    }
+
     &--full {
+      display: block;
       width: 100%;
       height: 100%;
     }
@@ -67,6 +105,10 @@
     text-align: center;
     padding: 10%;
     font-family: $font-barlow;
+
+    @include respond(tablet) {
+      padding: 5%;
+    }
 
     &__row {
       display: flex;

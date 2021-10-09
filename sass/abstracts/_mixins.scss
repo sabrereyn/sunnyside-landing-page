@@ -1,0 +1,60 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 475px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 768px) {
+      @content;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  %content-on-white {
+    div {
+      padding: 8% 7%;
+    }
+  }
+
+  %img-with-content {
+    div {
+      width: 70%;
+      left: 15%;
+      bottom: 25px;
+    }
+  }
+
+  .testimonials {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  * {
+    text-align: center;
+  }
+
+  %half-width {
+    width: 100%;
+  }
+
+  %content-on-white {
+    div {
+      padding: 15% 5%;
+    }
+  }
+
+  // .transform {
+  //   flex-direction: column-reverse;
+  // }
+
+  // .stand-out {
+  //   flex-direction: column;
+  // }
+
+  // body {
+  //   flex-direction: column;
+  // }
+}

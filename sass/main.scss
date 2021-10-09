@@ -1,6 +1,8 @@
 @import "abstracts/variables";
+@import "abstracts/mixins";
 @import "abstracts/extend";
 
+@import "base/base";
 @import "base/typography";
 
 @import "components/card";
@@ -14,17 +16,3 @@
 @import "layout/_bottom-imgs";
 @import "layout/_footer.scss";
 @import "layout/_media.scss";
-
-:root {
-  font-size: 13px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-}

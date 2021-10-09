@@ -1,5 +1,6 @@
 .nav {
-  @extend %flex-center;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   padding: 20px;
 
@@ -9,9 +10,14 @@
 
   &__list {
     width: 30%;
-    @extend %flex-center;
+    display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0;
+
+    @include respond(tablet) {
+      width: 50%;
+    }
   }
 
   &__item {

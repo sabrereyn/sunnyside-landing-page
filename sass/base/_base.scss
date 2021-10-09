@@ -1,0 +1,21 @@
+:root {
+  font-size: 13px;
+}
+
+* {
+  box-sizing: border-box;
+
+  @include respond(phone) {
+    text-align: center;
+  }
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  // @include respond(phone) {
+  //   flex-direction: column;
+  // }
+}
