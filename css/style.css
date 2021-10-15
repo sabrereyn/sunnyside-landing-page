@@ -122,22 +122,23 @@ body {
     display: block;
   }
 }
+.nav__menu {
+  width: 30%;
+}
+@media only screen and (max-width: 768px) {
+  .nav__menu {
+    width: 50%;
+  }
+}
 @media only screen and (max-width: 475px) {
   .nav__menu {
     position: relative;
   }
 }
 .nav__list {
-  width: 30%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   padding: 0;
-}
-@media only screen and (max-width: 768px) {
-  .nav__list {
-    width: 50%;
-  }
 }
 @media only screen and (max-width: 475px) {
   .nav__list {
