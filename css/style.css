@@ -125,14 +125,14 @@ body {
 .nav__menu {
   width: 30%;
 }
-@media only screen and (max-width: 768px) {
-  .nav__menu {
-    width: 50%;
-  }
-}
 @media only screen and (max-width: 475px) {
   .nav__menu {
     position: relative;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .nav__menu {
+    width: 50%;
   }
 }
 .nav__list {
