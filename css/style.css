@@ -3,11 +3,6 @@
     padding: 5%;
   }
 }
-@media screen and (max-width: 425px) {
-  * {
-    text-align: center;
-  }
-}
 /* For nav's vertical center alignment */
 .bottom-imgs {
   display: flex;
@@ -120,6 +115,17 @@ body {
 }
 .nav__ham {
   display: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 475px) {
+  .nav__ham {
+    display: block;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .nav__menu {
+    position: relative;
+  }
 }
 .nav__list {
   width: 30%;
@@ -131,6 +137,14 @@ body {
 @media only screen and (max-width: 768px) {
   .nav__list {
     width: 50%;
+  }
+}
+@media only screen and (max-width: 475px) {
+  .nav__list {
+    display: none;
+    width: 70%;
+    position: absolute;
+    background-color: white;
   }
 }
 .nav__item {
@@ -148,6 +162,9 @@ body {
   color: #23303e;
   background-color: white;
   text-transform: uppercase;
+}
+.nav__open {
+  display: block;
 }
 
 .section {

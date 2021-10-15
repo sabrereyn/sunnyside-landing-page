@@ -6,6 +6,17 @@
 
   &__ham {
     display: none;
+    cursor: pointer;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+  &__menu {
+    @include respond(phone) {
+      position: relative;
+    }
   }
 
   &__list {
@@ -17,6 +28,15 @@
 
     @include respond(tablet) {
       width: 50%;
+    }
+
+    @include respond(phone) {
+      display: none;
+      width: 70%;
+      position: absolute;
+      background-color: white;
+      // -webkit-clip-path: polygon(90% 14%, 100% 0, 100% 100%, 0 100%, 0 14%);
+      // clip-path: polygon(90% 14%, 100% 0, 100% 100%, 0 100%, 0 14%);
     }
   }
 
@@ -37,5 +57,9 @@
       background-color: hsl(0, 0%, 100%);
       text-transform: uppercase;
     }
+  }
+
+  &__open {
+    display: block;
   }
 }

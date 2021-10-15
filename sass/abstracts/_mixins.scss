@@ -30,31 +30,3 @@
     padding: 5%;
   }
 }
-
-@media screen and (max-width: 425px) {
-  * {
-    text-align: center;
-  }
-
-  %half-width {
-    width: 100%;
-  }
-
-  %content-on-white {
-    div {
-      padding: 15% 5%;
-    }
-  }
-
-  // .transform {
-  //   flex-direction: column-reverse;
-  // }
-
-  // .stand-out {
-  //   flex-direction: column;
-  // }
-
-  // body {
-  //   flex-direction: column;
-  // }
-}
